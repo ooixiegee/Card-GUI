@@ -1,0 +1,95 @@
+#pane {
+	-fx-background-color: radial-gradient(focus-angle 45deg, focus-distance 30%, center 50% 50%, radius 70%, #52c234, #061700);
+}
+#bitDonaldText,
+#donaldYes,
+#donaldPass{
+    -fx-visibility: hidden;
+}
+
+.playButton{
+        -fx-outline:none;
+        -fx-height: 40px;
+        -fx-text-align: center;
+        -fx-width: 130px;
+        -fx-border-radius:40px;
+        -fx-background: #d4af37;
+        -fx-border-width: 2px;
+        -fx-border-style:solid;
+        -fx-border-color:YELLOW;
+        -fx-letter-spacing:1px;
+        -fx-text-shadow:0;
+        -fx-font-size:12px;
+        -fx-font-weight:bold;
+        -fx-cursor: hand;
+        -fx-color:WHITE;
+        -fx-transition: all 0.25s ease;
+        -fx-font-family:'FontAwesome';
+        -fx-background-radius: 150;
+}
+.playButton:hover{
+        -fx-color:YELLOW;
+        -fx-background: YELLOW;
+}
+
+#donaldYes, #donaldPass{
+    -fx-outline:none;
+    -fx-height: 40px;
+    -fx-text-align: center;
+    -fx-width: 130px;
+    -fx-border-radius:40px;
+    -fx-background: #fff;
+    -fx-border-width: 2px;
+    -fx-border-style:solid;
+    -fx-border-color:GREEN;
+    -fx-color:GREEN;
+    -fx-letter-spacing:1px;
+    -fx-text-shadow:0;
+    -fx-font-size:12px;
+    -fx-font-weight:bold;
+    -fx-cursor: hand;
+    -fx-transition: all 0.25s ease;
+    -fx-font-family:'FontAwesome';
+    -fx-background-radius: 150;
+}
+
+#donaldYes:hover, #donaldPass:hover{
+    -fx-color:WHITE;
+    -fx-background: GREEN;
+}
+#bitDonaldText{
+        -fx-color:GREEN;
+        -fx-letter-spacing:1px;
+        -fx-text-shadow:0;
+        -fx-font-size:12px;
+        -fx-font-weight:bold;
+}
+.card--button:hover{
+        -fx-border-width: 2px;
+        -fx-border-style:solid;
+        -fx-border-color:GREEN;
+        -fx-cursor: hand;
+}
+.labelText{
+        -fx-text-fill: #d4af37;
+        -fx-text-transform: uppercase;
+        -fx-font-size: 60px;
+        -fx-font-family: "serif";
+        -fx-font-weight: bold;
+}
+
+.label2{
+     -fx-text-fill: #292929;
+     -fx-text-transform: uppercase;
+     -fx-font-size: 18px;
+     -fx-font-family: "serif";
+     -fx-font-weight: bold;
+}
+
+.label3{
+     -fx-text-fill: #292929;
+     -fx-text-transform: uppercase;
+     -fx-font-size: 32px;
+     -fx-font-family: "serif";
+     -fx-font-weight: bold;
+}

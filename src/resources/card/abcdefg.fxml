@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="pane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1670.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller2">
+   <children>
+      <AnchorPane fx:id="lamentable" layoutX="4.0" prefHeight="800.0" prefWidth="1670.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="-4.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Line endX="1481.800048828125" layoutX="173.0" layoutY="482.0" startX="-129.0" stroke="#d4af37" />
+            <Rectangle fx:id="cardPlace" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="218.0" layoutX="662.0" layoutY="106.0" stroke="#d4af37" strokeType="INSIDE" width="181.0" />
+            <ImageView fitHeight="209.0" fitWidth="198.0" layoutX="662.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../icon/imageedit_11_8534870401.png" />
+               </image>
+            </ImageView>
+            <ImageView fx:id="contract" layoutX="264.0" layoutY="120.0" fitHeight="254.0" fitWidth="190.0" style="-fx-border-color: #d4af37; -fx-border-radius: 15;"/>
+            <Label fx:id="labelName" styleClass="labelText" layoutX="700" layoutY="30.0" />
+            <ImageView fx:id="card1" layoutX="1138.0" layoutY="120.0" fitHeight="254.0" fitWidth="190.0"/>
+            <ImageView fx:id="card2" layoutX="1238.0" layoutY="120.0" fitHeight="254.0" fitWidth="190.0"/>
+            <ImageView fx:id="card3" layoutX="1338.0" layoutY="120.0" fitHeight="254.0" fitWidth="190.0"/>
+            <Label layoutX="229.0" styleClass="labelText" layoutY="35.0"  text="Contract" style=" -fx-text-fill: #d4af37;">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label styleClass="labelText" layoutX="1235.0" layoutY="39.0"  text="Card">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="scoreDeclarerTeam" styleClass="label3" visible="false" layoutX="500" layoutY="350" text="Score DeclarerTeam  :" />
+            <Label fx:id="scoreDT"  styleClass="label3" visible="false" layoutX="900" layoutY="350.0" />
+            <Label fx:id="scoreOppositeTeam"  styleClass="label3" visible="false" layoutX="500" layoutY="400.0" text="Score OppositeTeam :" />
+            <Label fx:id="scoreOT" styleClass="label3" visible="false" layoutX="900" layoutY="400.0" />
+            <Label fx:id="yourScore" styleClass="label2" visible="false" layoutX="680" layoutY="300.0" text="Your score :" />
+            <Label fx:id="youscore" styleClass="label2" visible="false" layoutX="800" layoutY="300.0" />
+
+            <Button fx:id="clicky" visible="false" layoutX="715.0" layoutY="366.0" mnemonicParsing="false" onAction="#start" prefHeight="49.0" prefWidth="74.0" styleClass="playButton" text="PLAY!" />
+            <Button fx:id="button1" styleClass="card--button" visible="false" layoutX="107.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleButton1" prefHeight="254.0" prefWidth="190.0" text="Button" />
+            <Button fx:id="button2" styleClass="card--button" visible="false" layoutX="202.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleButton2" prefHeight="254.0" prefWidth="190.0" text="Button" />
+            <Button fx:id="button3" styleClass="card--button" visible="false" layoutX="297.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleButton3" prefHeight="254.0" prefWidth="190.0" text="Button" />
+            <Button fx:id="button4" styleClass="card--button" visible="false" layoutX="392.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleButton4" prefHeight="254.0" prefWidth="190.0" text="Button" />
+            <Button fx:id="button5" styleClass="card--button" visible="false"  layoutX="487.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleButton5" prefHeight="254.0" prefWidth="190.0" text="Button" />
+            <Button fx:id="button6" styleClass="card--button" visible="false" layoutX="582.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleButton6" prefHeight="254.0" prefWidth="190.0" text="Button" />
+            <Button fx:id="button7" styleClass="card--button" visible="false" layoutX="677.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleButton7" prefHeight="254.0" prefWidth="190.0" text="Button" />
+            <Button fx:id="button8" styleClass="card--button" visible="false" layoutX="772.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleButton8" prefHeight="254.0" prefWidth="190.0" text="Button" />
+            <Button fx:id="button9" styleClass="card--button" visible="false" layoutX="867.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleButton9" prefHeight="254.0" prefWidth="190.0" text="Button" />
+            <Button fx:id="button10" styleClass="card--button" visible="false" layoutX="962.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleButton10" prefHeight="254.0" prefWidth="190.0" text="Button" />
+            <Button fx:id="button11" styleClass="card--button" visible="false" layoutX="1057.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleButton11" prefHeight="254.0" prefWidth="190.0" text="Button" />
+            <Button fx:id="button12" styleClass="card--button" visible="false" layoutX="1152.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleButton12" prefHeight="254.0" prefWidth="190.0" text="Button" />
+            <Button fx:id="button13" styleClass="card--button" visible="false" layoutX="1247.0" layoutY="514.0" mnemonicParsing="false" onAction="#handleButton13" prefHeight="254.0" prefWidth="190.0" text="Button" />
+            <Label fx:id="bitDonaldText" visible="false" layoutX="665.0" layoutY="240.0" prefHeight="50.0" prefWidth="190.0" text="Do you want to bit for Donald?" />
+            <Button fx:id="donaldYes" onAction="#bidDonald" visible="false" layoutX="700.0" layoutY="280.0" mnemonicParsing="false" text="YES" />
+            <Button fx:id="donaldPass" onAction="#passBidDonald" visible="false" layoutX="750.0" layoutY="280.0" mnemonicParsing="false" text="PASS" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

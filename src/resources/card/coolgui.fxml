@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="rootpane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1670.0" style="-fx-background-radius: 15;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="581.0" prefWidth="874.0" style="-fx-background-color: #292929; -fx-background-radius: 15;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label alignment="TOP_LEFT" layoutX="130.0" layoutY="362.0" prefHeight="59.0" prefWidth="463.0" text=" Welcome to Donald Card Game !" textAlignment="JUSTIFY">
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#e5e563" />
+                        <Stop color="#e5e563" offset="0.007633587786259542" />
+                        <Stop color="#d4af37" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+               <font>
+                  <Font size="28.0" />
+               </font>
+            </Label>
+            <Text layoutX="185.0" layoutY="431.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#e5e563" />
+                        <Stop color="#d4af37" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Text>
+            <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#e5e563" />
+                        <Stop color="BLACK" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Text layoutX="210.0" layoutY="451.0" strokeType="OUTSIDE" strokeWidth="0.0" text="To be a Donald or be a duck?" wrappingWidth="358.93675231933594">
+               <font>
+                  <Font size="21.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" focusAngle="-2.41" focusDistance="0.037383231047158016" radius="0.5">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#7c8288" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <Text layoutX="487.0" layoutY="433.0" strokeType="OUTSIDE" strokeWidth="0.0" text="&quot;">
+               <font>
+                  <Font size="26.0" />
+               </font>
+               <fill>
+                  <RadialGradient centerX="0.5" centerY="0.5" focusAngle="-2.41" focusDistance="0.037383231047158016" radius="0.5">
+                     <stops>
+                        <Stop color="WHITE" />
+                        <Stop color="#7c8288" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </fill>
+            </Text>
+            <AnchorPane fx:id="rightbar1" layoutX="781.0" layoutY="12.0" prefHeight="775.0" prefWidth="859.0" style="-fx-background-color: #292929; -fx-background-radius: 15;">
+               <children>
+                  <ImageView fx:id="seticon" fitHeight="108.0" fitWidth="136.0" layoutX="528.0" layoutY="432.0" style="-fx-border-color: #d4af37; -fx-border-radius: 15;">
+                     <image>
+                        <Image url="@../icon/setting icon.png" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="modButton" layoutX="71.0" layoutY="437.0" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" onAction="#changeScene" prefHeight="98.0" prefWidth="146.0" style="-fx-background-color: #292929; -fx-border-color: #d4af37; -fx-border-radius: 15; -fx-cursor: hand;" text="Mode">
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#e5e563" />
+                              <Stop color="#e5e563" offset="0.007633587786259542" />
+                              <Stop color="#d4af37" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                     <graphic>
+                        <ImageView fitHeight="44.0" fitWidth="48.0">
+                           <image>
+                              <Image url="@../icon/game icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="audioPlay" layoutX="154.0" layoutY="596.0" mnemonicParsing="false" prefHeight="139.0" prefWidth="146.0" style="-fx-background-color: #292929;-fx-border-color: #d4af37; -fx-border-radius: 15; -fx-cursor: hand;" onAction="#playSong">
+                     <textFill>
+                        <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                           <stops>
+                              <Stop color="#e5e563" />
+                              <Stop color="#e5e563" offset="0.007633587786259542" />
+                              <Stop color="#d4af37" offset="1.0" />
+                           </stops>
+                        </RadialGradient>
+                     </textFill>
+                     <graphic>
+                        <ImageView fx:id="audicon" fitHeight="108.0" fitWidth="127.0">
+                           <image>
+                              <Image url="@../icon/audio icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Button>
+                  <Button fx:id="butClose" layoutX="457.0" layoutY="596.0" mnemonicParsing="false" prefHeight="131.0" prefWidth="155.0" style="-fx-background-color: #292929;-fx-border-color: #d4af37; -fx-border-radius: 15; -fx-cursor: hand;">
+                     <graphic>
+                        <ImageView fx:id="playicon" fitHeight="108.0" fitWidth="136.0">
+                           <image>
+                              <Image url="@../icon/play icon.png" />
+                           </image>
+                        </ImageView>
+                     </graphic></Button>
+                  <ImageView fitHeight="85.0" fitWidth="118.0" layoutX="312.0" layoutY="444.0" style="-fx-border-color: #d4af37; -fx-border-radius: 15;">
+                     <image>
+                        <Image url="@../icon/achievement icon.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="328.0" fitWidth="518.0" layoutX="36.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true" />
+                  <ImageView fitHeight="371.0" fitWidth="585.0" layoutX="71.0" layoutY="14.0">
+                     <image>
+                        <Image url="@istockphoto-1189421233-612x612.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <Label layoutX="138.0" layoutY="501.0" prefHeight="35.0" prefWidth="428.0" style="-fx-background-color: #424242; -fx-background-radius: 15;" text=" Donald is the most popular and exciting card game all over the " textAlignment="JUSTIFY" textFill="#fff9f9">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="138.0" layoutY="526.0" prefHeight="18.0" prefWidth="428.0" style="-fx-background-color: #424242;" text=" world, because it is game of skill not luck. In Donald you never " textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="138.0" layoutY="546.0" prefHeight="18.0" prefWidth="428.0" style="-fx-background-color: #424242;" text=" will have bad hand, because doesn't matter what cards you have" textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label alignment="TOP_LEFT" layoutX="138.0" layoutY="566.0" prefHeight="28.0" prefWidth="428.0" style="-fx-background-color: #424242;" text=" what matters how well you will play them, because everybody " textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Label layoutX="138.0" layoutY="584.0" prefHeight="18.0" prefWidth="428.0" style="-fx-background-color: #424242; -fx-background-radius: 15;" text="  plays the same hands and you score against other players." textFill="WHITE">
+               <font>
+                  <Font size="14.0" />
+               </font></Label>
+            <Line endX="107.00006103515625" endY="637.8507690429688" layoutX="675.0" layoutY="145.0" startX="107.00003051757812" startY="-129.0">
+               <stroke>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#e5e563" />
+                        <Stop color="#e5e563" offset="0.007633587786259542" />
+                        <Stop color="#d4af37" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </stroke>
+            </Line>
+            <ImageView fitHeight="222.0" fitWidth="228.0" layoutX="259.0" layoutY="59.0">
+               <image>
+                  <Image url="@../icon/main card.png" />
+               </image>
+               <effect>
+                  <Reflection fraction="0.33" />
+               </effect>
+            </ImageView>
+            <Button layoutX="537.0" layoutY="645.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="166.0" style="-fx-background-color: #292929; -fx-border-radius: 15; -fx-border-color: #d4af37;" text="Get Started!">
+               <font>
+                  <Font size="17.0" />
+               </font>
+               <textFill>
+                  <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+                     <stops>
+                        <Stop color="#e5e563" />
+                        <Stop color="#e5e563" offset="0.007633587786259542" />
+                        <Stop color="#d4af37" offset="1.0" />
+                     </stops>
+                  </RadialGradient>
+               </textFill>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
